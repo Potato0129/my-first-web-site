@@ -1,50 +1,25 @@
-<!doctype html>       <!-- 이 문서는 HTMl이다 -->
+<!doctype html>
 <html>
 <head>
   <title>WEB3 - JavaScript</title>
-    <!-- 검색엔진과 같은 기계들은 <title>이라는 것을 책 표지와 같은 정보로써 사용함 -->
   <meta charset="utf-8">
-    <!-- 웹브라우저야, 이 웹페이지를 열 때는 UTF-8로 열렴. -->
-    <!-- character-문자 , set-규칙 -->
-
-    <!-- 위는 본문을 설명하는 태그들 -->
-    <!-- title : 본문의 제목이 무엇인가 -->
-    <!-- meta~: 이 본문이 utf-8이라는 방식으로 저장이 되어있다. -->
+  <link rel="stylesheet" href="style.css">
 </head>
-
-<!-- <html>, <head>, <body>는 본문과 본문을 설명하는 구역을 나누는 태그 -->
-<!-- 보다 원활하게 웹페이지의 구조를 나눠줌. 시맨틱 태그랑 비슷한 개념일까? -->
-
 <body>
-  <h1><a href="index.html">WEB<a></h1>
-  <ul>
-    <li><a href="1.html">HTML<a></li>
-    <li><a href="2.html">CSS<a></li>
-    <li><a href="3.html">JavaScript<a></li>
-  </ul>
-  <h2>JavaScript란 무엇인가?</h2>
-  <p><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/" target="_blank" title="JavaScript Specification">JavaScript</a> (/ˈdʒɑːvəskrɪpt/), often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.</p>
-  <img src="coding.jpg" width="100%" alt="Coding" style="margin-top:40px">
-  <p style="margin-top:40px">JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard. It has dynamic typing, prototype-based object-orientation, and first-class functions. It is multi-paradigm, supporting event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM).</p>
-    <!-- 위는 본문태그들 -->
-    <div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://web1-yloxkaivsz.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <h1><a href="index.html">WEB</a></h1>
+  <div id="grid">
+    <ol type="1">
+      <li><a href="1.html">HTML</a></li>
+      <li><a href="2.html">CSS</a></li>
+      <li><a href="3.html" id="active">JavaScript</a></li>
+    </ol>
+    <div id="article">
+      <h2>JavaScript란 무엇인가?</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/OSWppEa2Zac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/" target="_blank" title="JavaScript Specification">JavaScript</a> (/ˈdʒɑːvəskrɪpt/), often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.</p>
+      <img src="coding.jpg" width="100%" alt="Coding">
+      <p>JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard. It has dynamic typing, prototype-based object-orientation, and first-class functions. It is multi-paradigm, supporting event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM).</p>
+    </div>
+  </div>
 </body>
 </html>
